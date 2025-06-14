@@ -1,35 +1,4 @@
 {
-    "flags": "-iE",
-     "patterns": [
-
-         "id=",
-        "select=",
-        "report=",
-        "role=",
-        "update=",
-        "query=",
-        "user=",
-        "name=",
-        "sort=",
-        "where=",
-        "search=",
-        "params=",
-        "process=",
-        "row=",
-        "view=",
-        "table=",
-        "from=",
-        "sel=",
-        "results=",
-        "sleep=",
-        "fetch=",
-        "order=",
-        "keyword=",
-        "column=",
-        "field=",
-        "delete=",
-        "string=",
-        "number=",
-        "filter="
-]
+  "flags": "-iE",
+  "pattern": "(\\?|&)(id|select|delete|update|insert|union|where|exec|sleep|fetch|drop|alter|create|table|database)=[^&]+|(mysql_query|mysqli_query|pg_query|sqlite_exec|execute)\\s*\\([^)]*\\$.*(GET|POST|REQUEST|COOKIE)|(\\b)(select|union|all|from|where|having|group by|order by|limit|offset|into outfile|load_file)(\\b)"
 }
